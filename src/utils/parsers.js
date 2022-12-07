@@ -19,15 +19,14 @@ export const largeCurrencyParser = (ammount, abbreviated = true) => {
 
     if(!ammount) return '0 USD'
 
-    // Nine Zeroes for Billions
     return Math.abs(+ammount) >= 1.0e+9
 
     ? (Math.abs(+ammount) / 1.0e+9).toFixed(2) + (abbreviated ? ' B' : ' Billions')
-    // Six Zeroes for Millions 
+
     : Math.abs(+ammount) >= 1.0e+6
 
     ? (Math.abs(+ammount) / 1.0e+6).toFixed(2) + (abbreviated ? ' M' : ' Millions')
-    // Three Zeroes for Thousands
+
     : Math.abs(+ammount) >= 1.0e+3
 
     ? (Math.abs(+ammount) / 1.0e+3).toFixed(2) + (abbreviated ? ' K' : ' Thousands')
