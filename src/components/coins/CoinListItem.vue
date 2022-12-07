@@ -9,17 +9,19 @@ const props = defineProps({
         required: true
     }
 })
+// HOOKS
 const router = useRouter()
 
+// STATES
 const imageError = ref(false)
 
+// METHODS
 const parsedPrice = computed(() => {
     return priceParser(props.coin.priceUsd)
 })
 const parsedChangePercent24Hr = computed(() => {
     return percentageParser(props.coin.changePercent24Hr)
 })
-
 const handleCoinClick = () => {
     router.push(`/coin/${props.coin.id}`)
 }
@@ -27,7 +29,7 @@ const handleCoinClick = () => {
 const handleImageError = () => {
     imageError.value = true
 }
-
+// COMPUTED PROPERTIES
 const imageUrl = computed(() => {
     return imageError.value ? 
         'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Cryptocurrency_Logo.svg/3888px-Cryptocurrency_Logo.svg.png' :
