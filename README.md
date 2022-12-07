@@ -1,41 +1,41 @@
-# crypto-currencies
 
-This template should help get you started developing with Vue 3 in Vite.
+# Crypto currencies
 
-## Recommended IDE Setup
+Este repositorio corresponde a la prueba técnica para Epistemonikos detallada [acá](https://github.com/epistemonikos/prueba_frontend).
+El projecto fue desarrollado usando Vite, Vue 3 y Bootstrap 5.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
+## Instalación en local
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Clona el repositorio
 
-## Project Setup
-
-```sh
-npm install
+```bash
+  git clone https://github.com/asiz15/crypto-currencies
 ```
 
-### Compile and Hot-Reload for Development
+Ingresa al la carpeta del proyecto
 
-```sh
-npm run dev
+```bash
+  cd crypto-currencies
 ```
 
-### Compile and Minify for Production
+Instala las dependencias del proyecto
 
-```sh
-npm run build
+```bash
+  npm install
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+Inicia el proyecto localmente
 
-```sh
-npm run test:unit
+```bash
+  npm run dev
 ```
 
-### Lint with [ESLint](https://eslint.org/)
 
-```sh
-npm run lint
+## Tests
+
+Para correr los test unitarios de los componentes ejecuta
+
+```bash
+  npm run test:unit
 ```
